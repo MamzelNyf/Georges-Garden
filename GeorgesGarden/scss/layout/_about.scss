@@ -1,0 +1,27 @@
+.container-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-size: cover;
+    position: relative;
+}
+.background-video{
+    object-fit: cover;
+    opacity: 0.5;
+    background: get-color(tertiary);
+    @include breakpoint(large) {
+        width:100vw;
+    }
+}
+.about-text{
+    position: absolute;
+    width:90%;
+    padding:50px;
+    margin:10% auto 0;
+    background-color: rgba($primary-color,0.7);
+    z-index:4;
+    @include breakpoint(large) {
+        width:50%;
+    }
+}

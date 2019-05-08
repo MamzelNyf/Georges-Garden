@@ -3,7 +3,16 @@
 @import 'settings';
 @import '../node_modules/foundation-sites/scss/foundation';
 @import '../node_modules/motion-ui/motion-ui';
-@import 'layout/topbar';
+
+
+//Global Elements
+@import 'layout/font';
+@import 'layout/footer';
+@import 'layout/nav';
+
+//Pages
+@import 'layout/about';
+@import 'layout/home';
 
 // Global styles
 @include foundation-global-styles;

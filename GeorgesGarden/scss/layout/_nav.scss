@@ -1,0 +1,52 @@
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+[data-sticky] {
+  width:100%;
+}
+
+.sticky-container {
+  z-index: 5;
+}
+
+.top-bar {
+  width: 100%;
+  background-color: $secondary-color!important;
+  box-shadow: 1px 0 3px $dark-gray;
+    .menu {
+      background-color: rgba($secondary-color,1);
+      li {
+        display: flex;
+        align-items: center;
+      } 
+      a {
+        color: $white;
+        font-weight: bold;
+        &:hover {
+        color: $primary-color;
+        }
+      }
+    }
+    .menu-text {
+      color: $black;
+    }
+  }
+  .title-bar{
+    background-color: $secondary-color!important;
+
+  }
+  .logo{
+    margin:0!important;
+    padding:0!important;
+  }

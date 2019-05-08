@@ -1,0 +1,97 @@
+.fullscreen-image-slider {
+  position:absolute;
+    .orbit-image {
+      width:100%;
+      height:100vh;
+    }
+  
+    .orbit-caption {
+      text-align: left;
+      font-size: 0.8em;
+      font-family: 'Montserrat';
+      font-weight:100;
+      background-color: rgba($color: #000000, $alpha: 0.1)
+    }
+  }
+
+.hero-full-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+  position: relative;
+
+  .middle-content-section {
+    text-align: center;
+    color: $white;
+    margin-bottom: 20%;
+  }
+
+  .top-content-section {
+    width: 100%;
+  }
+
+  .bottom-content-section {
+    padding: 1rem;
+
+    svg {
+      height: rem-calc(60);
+      width: rem-calc(60);
+      fill: $white;
+    }
+  }
+}
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+  
+    .button.round {
+      border-radius: 5000px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  
+    .content-section-img {
+      align-self: center;
+      flex: 1 0 100%;
+      background: get-color(tertiary);
+
+  
+      img {
+        width: 100%;
+      }
+  
+      @media screen and (min-width: 40em) {
+        flex: 1 0 50%;
+      }
+    }
+  
+    .content-section-block {
+      padding: 1rem;
+      flex: 1 0 100%;
+      align-self: stretch;
+      background: get-color(tertiary);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+  
+      @media screen and (min-width: 40em) {
+        flex: 1 0 50%;
+        padding: 2rem;
+      }
+    }
+  }
+  
+  .content-section-block-header {
+    font-size: 24px;
+  }
+  
+  .content-section-block-subheader {
+    font-size: 13px;
+  }
+  
+  
