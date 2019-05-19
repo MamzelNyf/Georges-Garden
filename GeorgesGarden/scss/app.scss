@@ -7,12 +7,13 @@
 
 //Global Elements
 @import 'layout/font';
-@import 'layout/footer';
-@import 'layout/nav';
+@import 'layout/component/footer';
+@import 'layout/component/nav';
+@import 'layout/component/shopping';
 
 //Pages
-@import 'layout/about';
-@import 'layout/home';
+@import 'layout/page/about';
+@import 'layout/page/home';
 
 // Global styles
 @include foundation-global-styles;
