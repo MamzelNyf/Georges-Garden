@@ -5,16 +5,6 @@
 @import '../node_modules/motion-ui/motion-ui';
 
 
-//Global Elements
-@import 'layout/font';
-@import 'layout/component/footer';
-@import 'layout/component/nav';
-@import 'layout/component/shopping';
-
-//Pages
-@import 'layout/page/about';
-@import 'layout/page/home';
-
 // Global styles
 @include foundation-global-styles;
 @include foundation-forms;
@@ -73,3 +63,13 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+//Global Elements
+@import 'layout/font';
+@import 'layout/component/footer';
+@import 'layout/component/nav';
+@import 'layout/component/shopping';
+
+//Pages
+@import 'layout/page/about';
+@import 'layout/page/home';
