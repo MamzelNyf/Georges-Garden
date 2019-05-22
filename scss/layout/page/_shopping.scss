@@ -1,0 +1,30 @@
+.tabs {
+    img {
+        width: 5rem;
+
+        @include breakpoint(medium) {
+            width: 7rem;
+        }
+    }
+
+    span {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+.tabs-title {
+    width: 25%;
+
+    >a {
+        padding: 0.4rem !important;
+    }
+    > a:focus,
+    a[aria-selected='true']{
+    background-color: lighten(get-color(tertiary), 10%);
+    }
+}
+
+.tabs-panel{
+    background-color: lighten(get-color(tertiary), 25%);
+}

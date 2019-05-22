@@ -1,15 +1,19 @@
+.js-off-canvas-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
-  .js-off-canvas-overlay{
-    background-color: rgba(0,0,0,0.4);
+.off-canvas {
+  background: $secondary-color !important;
+  width: 100vw !important;
+
+  @include breakpoint(medium) {
+    width: 350px !important;
   }
-  .off-canvas{
-    background: $secondary-color!important;
-    width: 100vw!important; 
-    @include breakpoint(medium){
-      width: 350px!important; 
-    }
-    a{margin:1.2rem;}
+
+  a {
+    margin: 1.2rem;
   }
+}
 
 .shopping-cart-button {
   padding: 1rem;
@@ -28,9 +32,10 @@
   }
 
 }
-.shopping-title{
+
+.shopping-title {
   text-align: center;
-  padding:1.4rem;
+  padding: 1.4rem;
   background-color: get-color(tertiary);
 
 }
@@ -41,4 +46,3 @@
   padding: 1rem;
   border-bottom: 1px solid $light-gray;
 }
-

@@ -1,16 +1,18 @@
 .responsive-blog-footer {
-  background: darken($dark-gray, 25%);
+  background: $secondary-color;
   padding: 3rem 3rem;
   color: white;
 
   .mailing-list {
     margin-bottom: 1.5rem;
   }
+
   .mailing-container {
     margin-bottom: 2rem;
   }
 
-  .about-section, .tag-section {
+  .about-section,
+  .tag-section {
     margin-bottom: 2rem;
 
     a {
@@ -18,23 +20,14 @@
     }
   }
 
-  .subscribe-button {
-    background-color:$primary-color;
-
-    &:hover {
-     background-color: darken($primary-color, 5%);
-     transition: color 0.3s ease-in;
-    }
-  }
 
   .fa-chevron-circle-up {
     font-size: 3rem;
     color: $dark-gray;
 
-     &:hover {
-     color: lighten($dark-gray, 15%);
-     transition: color 0.3s ease-in;
+    &:hover {
+      color: lighten($dark-gray, 15%);
+      transition: color 0.3s ease-in;
     }
   }
 }
-

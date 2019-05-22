@@ -68,8 +68,10 @@
 @import 'layout/font';
 @import 'layout/component/footer';
 @import 'layout/component/nav';
-@import 'layout/component/shopping';
+@import 'layout/component/offcanvas';
 
 //Pages
 @import 'layout/page/about';
 @import 'layout/page/home';
+@import 'layout/page/shopping';
+@import 'layout/page/contact';
