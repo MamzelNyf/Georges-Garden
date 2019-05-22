@@ -13,79 +13,156 @@
 </head>
 
 <body>
-    <!-- BEGINNING NAVBAR -->
-    <div data-sticky-container id="#top">
-        <div data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
-            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-                <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-                <div class="title-bar-title"><a href="index.html" class="logo"><img src="img/GG.png" width="150px"
-                            alt="logo"></a></div>
-            </div>
-            <div class="top-bar" id="example-menu">
-                <div class="top-bar-left">
-                    <ul class="vertical medium-horizontal dropdown menu"
-                        data-responsive-menu="accordion medium-dropdown">
-                        <li><a href="index.html" class="logo"><img src="img/GG.png" width="150px" alt="logo"
-                                    class="hide-for-small-only"></a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="top-bar-right">
-                    <ul class="menu">
-                        <li><input type="text" placeholder="Looking for a flower?"></li>
-                        <li><button class="button">Search</button></li>
-                    </ul>
+    <!-- OFF CANVAS ASIDE ================================================================================================================================================ -->
+    <aside class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
+        <!-- SHOPPING CARD -->
+        <div class="grid-container-fluid">
+            <div class="grid-x ">
+                <div class="cell expanded shopping-title">ITEMS IN CART</div>
+                <div class="cell">
+                    <a>Style & Co Knit Blazer</a>
+                    <div class="shopping-cart-item">
+                        <img src="https://placehold.it/80">
+                        <div class="shopping-cart-item-name">
+                            <p><span class="shopping-cart-title">Color: </span>Blue</p>
+                            <p><span class="shopping-cart-title">Size: </span>M</p>
+                        </div>
+                        <div class="shopping-cart-item-price">
+                            <p class="shopping-cart-title">$24.99</p>
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                    <a>Style & Co Knit Blazer</a>
+                    <div class="shopping-cart-item">
+                        <img src="https://placehold.it/80">
+                        <div class="shopping-cart-item-name">
+                            <p><span class="shopping-cart-title">Color: </span>Blue</p>
+                            <p><span class="shopping-cart-title">Size: </span>M</p>
+                        </div>
+                        <div class="shopping-cart-item-price">
+                            <p class="shopping-cart-title">$24.99</p>
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                    <a>Style & Co Knit Blazer</a>
+                    <div class="shopping-cart-item">
+                        <img src="https://placehold.it/80">
+                        <div class="shopping-cart-item-name">
+                            <p><span class="shopping-cart-title">Color: </span>Blue</p>
+                            <p><span class="shopping-cart-title">Size: </span>M</p>
+                        </div>
+                        <div class="shopping-cart-item-price">
+                            <p class="shopping-cart-title">$24.99</p>
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="button float-right">Finish your order</a>
+                    <!-- END OF SHOPPING CART -->
+                    <button class="close-button" aria-label="Close alert" type="button" data-close>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- END NAV BAR -->
+    </aside>
+    <!-- END OFF CANVAS ASIDE ================================================================================================================================================ -->
 
-    <!-- MIDDLE SECTION -BACKGROUND VIDEO -->
-    <div class="container-video">
-        <video autoplay muted loop class="background-video">
-            <source src="video/flower.mp4" type="video/mp4"></video>
-        <div class="about-text">
-            <h1>About Georges Garden</h1>
-            <p>paragraph about how amazing and awesome i am paragraph about how amazing and awesome i am paragraph about
-                how amazing and awesome i am</p>
-        </div>
-    </div>
-    <!-- END MIDDLE MIDDLE SECTION -->
-
-    <!-- FOOTER SECTION -->
-    <footer class="responsive-blog-footer">
-        <div class="grid-x grid-padding-x">
-            <div class="large-3 cell hide-for-small-only about-section">
-                <img src="https://placehold.it/250x250">
+    <!-- OFF CANVAS CONTENT (Whole website) ================================================================================================================================== -->
+    <!-- In the off-canvas-content DIV goes the whole page content -->
+    <div class="off-canvas-content" data-off-canvas-content>
+        <!-- BEGINNING NAVBAR -->
+        <!--Mobile Navbar-->
+        <div data-sticky-container class="top-content-section" id="#top">
+            <div data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+                <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+                    <div class="grid-x align-middle align-justify">
+                        <div class="cell shrink"><button class="menu-icon" type="button"
+                                data-toggle="main-menu"></button></div>
+                        <div class="cell small-7"><a href="index.html" class="logo"><img src="img/GG.png"
+                                    alt="logo"></a>
+                        </div>
+                        <div class="cell shrink text-center">
+                            <a data-toggle="offCanvas"> <span><i class="fa fa-shopping-cart"></i></span><br>Cart(0)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-x">
+                    <div class="cell auto">
+                        <div class="top-bar" id="main-menu">
+                            <div class="top-bar-left">
+                                <ul class="vertical medium-horizontal dropdown menu"
+                                    data-responsive-menu="accordion medium-dropdown">
+                                    <li><a href="index.html" class="logo"><img src="img/GG.png" width="150px" alt="logo"
+                                                class="hide-for-small-only"></a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="top-bar-right">
+                                <ul class="menu">
+                                    <li><input type="text" placeholder="Looking for a flower?"></li>
+                                    <li><button class="button">Search</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <dic class="cell shrink hide-for-small-only">
+                        <button type="button" class="shopping-cart-button" data-toggle="offCanvas">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="text">Cart (3)</span>
+                        </button>
+                    </dic>
+                </div>
             </div>
-            <div class="large-6 cell about-section">
-                <h4> About Georges Garden</h4>
+        </div>
+        <!-- END NAV BAR -->
+        <!-- MIDDLE SECTION -BACKGROUND VIDEO -->
+        <div class="container-video">
+            <video autoplay muted loop class="background-video">
+                <source src="video/flower.mp4" type="video/mp4"></video>
+            <div class="about-text">
+                <h1>About Georges Garden</h1>
                 <p>paragraph about how amazing and awesome i am paragraph about how amazing and awesome i am paragraph
-                    about how amazing and awesome i am</p>
-                <a href="">Read More</a>
-            </div>
-            <div class="large-3 cell mailing-container">
-                <h4 class="mailing-list">Join my mailing list</h4>
-                <input type="text" placeholder="Email Address">
-                <a class="button expanded subscribe-button" href="#">Subscribe Now</a>
+                    about
+                    how amazing and awesome i am</p>
             </div>
         </div>
-        <div class="grid-x  align-justify">
-            <p> all rights reserved</p>
-            <div class="up-argrid-x">
-                <a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </footer>
-    <!-- END FOOTER -->
+        <!-- END MIDDLE MIDDLE SECTION -->
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/what-input/dist/what-input.js"></script>
-    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
+        <!-- FOOTER SECTION -->
+        <footer class="responsive-blog-footer">
+            <div class="grid-x grid-padding-x">
+                <div class="large-3 cell hide-for-small-only about-section">
+                    <img src="https://placehold.it/250x250">
+                </div>
+                <div class="large-6 cell about-section">
+                    <h4> About Georges Garden</h4>
+                    <p>paragraph about how amazing and awesome i am paragraph about how amazing and awesome i am
+                        paragraph
+                        about how amazing and awesome i am</p>
+                    <a href="">Read More</a>
+                </div>
+                <div class="large-3 cell mailing-container">
+                    <h4 class="mailing-list">Join my mailing list</h4>
+                    <input type="text" placeholder="Email Address">
+                    <a class="button expanded subscribe-button" href="#">Subscribe Now</a>
+                </div>
+            </div>
+            <div class="grid-x  align-justify">
+                <p> all rights reserved</p>
+                <div class="up-argrid-x">
+                    <a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/what-input/dist/what-input.js"></script>
+        <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+        <script src="js/app.js"></script>
 </body>
 
 </html>

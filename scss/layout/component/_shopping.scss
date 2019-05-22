@@ -1,10 +1,26 @@
+
+  .js-off-canvas-overlay{
+    background-color: rgba(0,0,0,0.4);
+  }
+  .off-canvas{
+    background: $secondary-color!important;
+    width: 100vw!important; 
+    @include breakpoint(medium){
+      width: 350px!important; 
+    }
+    a{margin:1.2rem;}
+  }
+
 .shopping-cart-button {
   padding: 1rem;
-  background-color: $primary-color;
+  background-color: get-color(tertiary);
   float: right;
+  height: 100%;
+  box-shadow: 1px 0 3px #8a8a8a;
+  cursor: pointer;
 
   &:hover {
-    background-color: darken($primary-color, 10%)
+    background-color: darken(get-color(tertiary), 10%)
   }
 
   i {
@@ -12,16 +28,11 @@
   }
 
 }
+.shopping-title{
+  text-align: center;
+  padding:1.4rem;
+  background-color: get-color(tertiary);
 
-.shopping-cart-dropdown-pane {
-  .dropdown-pane {
-    padding: 0;
-    @include breakpoint(small only) {
-    width:100vw;
-    position: relative;
-    top:0!important;
-    left:0!important;}
-  }
 }
 
 .shopping-cart-item {
@@ -31,27 +42,3 @@
   border-bottom: 1px solid $light-gray;
 }
 
-.shopping-cart-item-name, .shopping-cart-item-price {
-  padding: 0 1rem;
-
-  p {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.shopping-cart-title {
-  font-weight: bold;
-}
-
-.shopping-cart-checkout {
-  padding: 0.5rem;
-  margin-bottom: 0;
-}
-
-.list-product{
-  p{
-    color:$primary-color;
-
-  }
-}

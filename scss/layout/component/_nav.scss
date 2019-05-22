@@ -17,7 +17,7 @@
 }
 
 .sticky-container {
-  z-index: 5;
+  z-index: 20;
 }
 
 .top-bar {
@@ -44,7 +44,6 @@
   }
   .title-bar{
     background-color: $secondary-color!important;
-
   }
   .logo{
     margin:0!important;
@@ -54,3 +53,7 @@
   .menu-mobile{
     width: 100vw;
   }
+.close-button{
+  right: 1.5rem;
+  top: 1.2rem;
+}
