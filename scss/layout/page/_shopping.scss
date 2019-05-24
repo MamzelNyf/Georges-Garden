@@ -1,15 +1,17 @@
 .tabs {
     img {
-        width: 5rem;
-
-        @include breakpoint(medium) {
-            width: 7rem;
+        width: 4rem;
+        @include breakpoint(large) {
+            width: 5rem;
+        }
+        @include breakpoint(large) {
+            width: 6rem;
         }
     }
 
     span {
         display: block;
-        margin-top: 10px;
+        margin: 15px 0;
     }
 }
 
@@ -18,13 +20,43 @@
 
     >a {
         padding: 0.4rem !important;
+        background-color: lighten(get-color(tertiary), 100%);
+        transition: 0.3s;
+
+        @include breakpoint(medium) {
+            font-size: 1em;
+        }
+
+        &:hover {
+            background-color: $secondary-color;
+            -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+            box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+            ;
+            transition: box-shadow 0.5s, background-color 0.25s ease-in-out;
+
+        }
     }
-    > a:focus,
-    a[aria-selected='true']{
-    background-color: lighten(get-color(tertiary), 10%);
+
+    >a:focus,
+    a[aria-selected='true'] {
+        background-color: lighten(get-color(tertiary), 10%);
     }
 }
 
-.tabs-panel{
+.tabs-panel {
     background-color: lighten(get-color(tertiary), 25%);
+}
+
+.slide img {
+    opacity: 0;
+    @include mui-animation(fade(in));
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@for $i from 1 through 10 {
+    .slide div:nth-of-type(#{$i}) img {
+        -webkit-animation-delay:(#{$i*0.2s});
+        animation-delay:(#{$i*0.2s});
+    }
 }

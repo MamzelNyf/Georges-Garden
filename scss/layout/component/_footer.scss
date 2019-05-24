@@ -19,15 +19,8 @@
       color: $white;
     }
   }
-
-
   .fa-chevron-circle-up {
     font-size: 3rem;
-    color: $dark-gray;
-
-    &:hover {
-      color: lighten($dark-gray, 15%);
-      transition: color 0.3s ease-in;
-    }
+    color: $white;
   }
 }

@@ -3,14 +3,15 @@
     .orbit-image {
       width:100%;
       height:100vh;
+      opacity: 0.8;
     }
   
     .orbit-caption {
-      text-align: left;
+      text-align: right;
       font-size: 0.8em;
       font-family: 'Montserrat';
       font-weight:100;
-      background-color: rgba($color: #000000, $alpha: 0.1)
+      background-color: rgba($black, 0.6)
     }
   }
 
@@ -26,9 +27,23 @@
   .middle-content-section {
     text-align: center;
     color: $white;
-    margin-bottom: 20%;
+    margin-bottom: 20%; 
+    .title-mobile{
+      margin-bottom: 110%;
+      @include breakpoint(medium) {
+        margin-bottom: 0;
+      }
+    }
+    h1{
+      background-color:rgba($white,0.5);
+      padding:5px;
+      @include breakpoint(medium) {
+        border-radius: 5px;
+        background-color:rgba($white,0.3);
+        padding:10px;
+      }
+    }
   }
-
   .top-content-section {
     width: 100%;
   }
@@ -36,10 +51,9 @@
   .bottom-content-section {
     padding: 1rem;
 
-    svg {
-      height: rem-calc(60);
-      width: rem-calc(60);
-      fill: $white;
+    .fa-chevron-circle-down {
+      font-size: 3rem;
+      color: $white;
     }
   }
 }
@@ -52,7 +66,6 @@
       align-self: center;
       flex: 1 0 100%;
       background-color: lighten(get-color(tertiary), 10%) ;
-
   
       img {
         width: 100%;
@@ -60,6 +73,11 @@
   
       @media screen and (min-width: 40em) {
         flex: 1 0 50%;
+      }
+
+      .responsive-embed, 
+      .flex-video{
+        margin-bottom:0;
       }
     }
   
