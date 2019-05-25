@@ -47,7 +47,7 @@
     background-color: lighten(get-color(tertiary), 25%);
 }
 
-.slide img {
+.fadein img {
     opacity: 0;
     @include mui-animation(fade(in));
     animation-duration: 1s;
@@ -55,7 +55,7 @@
 }
 
 @for $i from 1 through 10 {
-    .slide div:nth-of-type(#{$i}) img {
+    .fadein div:nth-of-type(#{$i}) img {
         -webkit-animation-delay:(#{$i*0.2s});
         animation-delay:(#{$i*0.2s});
     }

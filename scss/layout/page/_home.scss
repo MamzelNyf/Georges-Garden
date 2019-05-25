@@ -58,7 +58,15 @@
     }
   }
 }
-
+.cite{
+  color: $primary-color;
+  font-family: 'Hairline', Helvetica, Roboto, Arial, sans-serif;
+  font-size: 2rem;
+  margin: 100px 0;
+  span{
+    color:$secondary-color;
+  }
+}
 .content-section {
     display: flex;
     flex-wrap: wrap;

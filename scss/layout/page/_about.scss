@@ -105,3 +105,8 @@
     letter-spacing: 1px;
     opacity: 0.8;
 }
+
+.slideup{
+    @include mui-animation(slide(in,up));
+    animation-duration: 1s;
+}

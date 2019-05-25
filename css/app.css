@@ -9443,6 +9443,35 @@ p {
   opacity: 0.8;
 }
 
+.slideup {
+  -webkit-animation-name: slide-in-up-100;
+          animation-name: slide-in-up-100;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes slide-in-up-100 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-up-100 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .fullscreen-image-slider {
   position: absolute;
 }
@@ -9522,6 +9551,17 @@ p {
 .hero-full-screen .bottom-content-section .fa-chevron-circle-down {
   font-size: 3rem;
   color: #fefefe;
+}
+
+.cite {
+  color: #154018;
+  font-family: 'Hairline', Helvetica, Roboto, Arial, sans-serif;
+  font-size: 2rem;
+  margin: 100px 0;
+}
+
+.cite span {
+  color: #588C5C;
 }
 
 .content-section {
@@ -9657,7 +9697,7 @@ p {
   background-color: #fff0cc;
 }
 
-.slide img {
+.fadein img {
   opacity: 0;
   -webkit-animation-name: fade-0-to-1;
           animation-name: fade-0-to-1;
@@ -9685,52 +9725,52 @@ p {
   }
 }
 
-.slide div:nth-of-type(1) img {
+.fadein div:nth-of-type(1) img {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
-.slide div:nth-of-type(2) img {
+.fadein div:nth-of-type(2) img {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
-.slide div:nth-of-type(3) img {
+.fadein div:nth-of-type(3) img {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
-.slide div:nth-of-type(4) img {
+.fadein div:nth-of-type(4) img {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-.slide div:nth-of-type(5) img {
+.fadein div:nth-of-type(5) img {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
-.slide div:nth-of-type(6) img {
+.fadein div:nth-of-type(6) img {
   -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
 }
 
-.slide div:nth-of-type(7) img {
+.fadein div:nth-of-type(7) img {
   -webkit-animation-delay: 1.4s;
   animation-delay: 1.4s;
 }
 
-.slide div:nth-of-type(8) img {
+.fadein div:nth-of-type(8) img {
   -webkit-animation-delay: 1.6s;
   animation-delay: 1.6s;
 }
 
-.slide div:nth-of-type(9) img {
+.fadein div:nth-of-type(9) img {
   -webkit-animation-delay: 1.8s;
   animation-delay: 1.8s;
 }
 
-.slide div:nth-of-type(10) img {
+.fadein div:nth-of-type(10) img {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }

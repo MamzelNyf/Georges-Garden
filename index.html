@@ -64,31 +64,33 @@
     <!-- BACKGROUND SLIDER -->
     <div class="cell fullscreen-image-slider">
       <div class="orbit" role="region" aria-label="FullScreen Pictures" data-orbit>
-        <ul class="orbit-container">
-          <button class="orbit-previous">
+        <div class="orbit-container">
+          <a class="orbit-previous">
             <span class="show-for-sr">Previous Slide</span>
             <span class="nav fa fa-chevron-left fa-3x"></span>
-          </button>
-          <button class="orbit-next">
+          </a>
+          <a class="orbit-next">
             <span class="show-for-sr">Next Slide</span>
             <span class="nav fa fa-chevron-right fa-3x"></span>
-          </button>
-          <li class="is-active orbit-slide">
-            <img class="orbit-image show-for-small-only" src="img/mobile-yellow.JPG" alt="Colseam">
-            <img class="orbit-image hide-for-small-only " src="img/yellow.JPG" alt="Colseam">
-            <figcaption class="orbit-caption">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</figcaption>
-          </li>
-          <li class="orbit-slide">
-            <img class="orbit-image show-for-small-only" src="img/mobile-pink.JPG" alt="Colseam">
-            <img class="orbit-image hide-for-small-only" src="img/pink.JPG" alt="Picture">
-            <figcaption class="orbit-caption">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.<figcaption>
-          </li>
-          <li class="orbit-slide">
-            <img class="orbit-image show-for-small-only" src="img/mobile-windy.JPG" alt="Colseam">
-            <img class="orbit-image hide-for-small-only" src="img/windy.JPG" alt="Picture">
-            <figcaption class="orbit-caption">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</figcaption>
-          </li>
-        </ul>
+          </a>
+          <ul class="orbit-container">
+            <li class="is-active orbit-slide">
+              <img class="orbit-image show-for-small-only" src="img/mobile-yellow.JPG" alt="Flowers - Picture by Fanny LEFERT">
+              <img class="orbit-image hide-for-small-only " src="img/yellow.JPG" alt="Flowers - Picture by Fanny LEFERT">
+              <p class="orbit-caption">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image show-for-small-only" src="img/mobile-pink.JPG" alt="Flowers - Picture by Fanny LEFERT">
+              <img class="orbit-image hide-for-small-only" src="img/pink.JPG" alt="Flowers - Picture by Fanny LEFERT">
+              <p class="orbit-caption">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image show-for-small-only" src="img/mobile-windy.JPG" alt="Flowers - Picture by Fanny LEFERT">
+              <img class="orbit-image hide-for-small-only" src="img/windy.JPG" alt="Flowers - Picture by Fanny LEFERT">
+              <p class="orbit-caption">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- END SLIDER -->
@@ -114,8 +116,9 @@
               <div class="top-bar" id="main-menu">
                 <div class="top-bar-left">
                   <ul class="vertical medium-horizontal dropdown menu" data-responsive-menu="accordion medium-dropdown">
-                      <li><a href="index.html" class="logo"><img src="img/GG.png" width="150" alt="logo" class="hide-for-small-only"></a></li>
-                      <li><a href="shop.html">Shop</a></li>
+                    <li><a href="index.html" class="logo"><img src="img/GG.png" width="150" alt="logo"
+                          class="hide-for-small-only"></a></li>
+                    <li><a href="shop.html">Shop</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                   </ul>
@@ -145,19 +148,25 @@
         </div>
       </div>
       <div class="bottom-content-section hide-for-small-only" data-magellan data-threshold="0">
-          <a href="#main-content-section">
+        <a href="#main-content-section">
           <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
         </a>
       </div>
     </div>
     <!-- END MIDDLE SECTION -->
-
+    <div class="grid-container" id="main-content-section">
+      <div class="grid-x grid-margin-x grid-padding-x grid-padding-y align-center-middle">
+          <cell class="medium-6 text-center cite">
+            <span>"</span>Gardening is medicine <br>that does not need a prescription <br>and has no limit on dosage.<span>"</span>
+          </cell>
+      </div>
+    </div>
     <!-- 4 BLOCKS + VIDEO MIDDLE SECTION -->
-    <div class="content-section" id="main-content-section" data-magellan-target="main-content-section">
+    <div class="content-section"  data-magellan-target="main-content-section">
       <div class="content-section-img">
         <div class="responsive-embed flex-video">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/ryUxrFUk6MY?controls=0&amp;start=10"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="border:0;"
             allowfullscreen></iframe>
         </div>
       </div>
@@ -183,11 +192,12 @@
     <footer class="responsive-blog-footer">
       <div class="grid-x grid-padding-x">
         <div class="large-3 cell hide-for-small-only about-section">
-          <img src="img/crop.jpg" alt="Alexandre resting in the wildflower - Picture by Fanny LEFERT" />
+          <img src="img/crop.jpg" alt="Picture - Pixabay" />
         </div>
         <div class="large-6 cell about-section">
           <h4> About Georges Garden website</h4>
-          <p>This website has been created for an Complex UX design assessment, Web development Diploma 2019, Tafe North Metropolitan</p>
+          <p>This website has been created for an Complex UX design assessment, Web development Diploma 2019, Tafe North
+            Metropolitan</p>
           <a href="">Read More</a>
         </div>
         <div class="large-3 cell mailing-container">
@@ -204,12 +214,12 @@
       </div>
     </footer>
     <!-- END FOOTER -->
-    </div>
+  </div>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/what-input/dist/what-input.js"></script>
-    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/what-input/dist/what-input.js"></script>
+  <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
