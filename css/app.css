@@ -9170,14 +9170,13 @@ p {
 }
 
 .top-bar {
-  width: 100%;
-  background-color: #588C5C !important;
+  background-color: rgba(88, 140, 92, 0.7) !important;
   -webkit-box-shadow: 1px 0 3px #8a8a8a;
           box-shadow: 1px 0 3px #8a8a8a;
 }
 
 .top-bar .menu {
-  background-color: #588c5c;
+  background-color: transparent !important;
 }
 
 .top-bar .menu li {
@@ -9191,19 +9190,14 @@ p {
 
 .top-bar .menu a {
   color: #fefefe;
-  font-weight: bold;
 }
 
 .top-bar .menu a:hover {
   color: #154018;
 }
 
-.top-bar .menu-text {
-  color: #0a0a0a;
-}
-
 .title-bar {
-  background-color: #588C5C !important;
+  background-color: rgba(88, 140, 92, 0.7) !important;
 }
 
 .logo {
@@ -9211,21 +9205,12 @@ p {
   padding: 0 !important;
 }
 
-.menu-mobile {
-  width: 100vw;
-}
-
-.close-button {
-  right: 1.5rem;
-  top: 1.2rem;
-}
-
 .js-off-canvas-overlay {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .off-canvas {
-  background: #588C5C !important;
+  background: rgba(113, 166, 117, 0.8) !important;
   width: 100vw !important;
 }
 
@@ -9288,6 +9273,8 @@ p {
 
 .close-button {
   color: #588C5C;
+  right: 1.5rem;
+  top: 1.2rem;
 }
 
 .container-video {
@@ -9553,14 +9540,14 @@ p {
   color: #fefefe;
 }
 
-.cite {
+.content-cite {
   color: #154018;
   font-family: 'Hairline', Helvetica, Roboto, Arial, sans-serif;
   font-size: 2rem;
   margin: 100px 0;
 }
 
-.cite span {
+.content-cite span {
   color: #588C5C;
 }
 

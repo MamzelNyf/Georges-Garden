@@ -1,9 +1,10 @@
+// To darken the background when the menu is overlaping
 .js-off-canvas-overlay {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .off-canvas {
-  background: $secondary-color !important;
+  background: lighten(rgba($secondary-color, 0.8), 10%) !important;
   width: 100vw !important;
 
   @include breakpoint(medium) {
@@ -46,15 +47,20 @@
   padding: 1rem;
   border-bottom: 1px solid $light-gray;
   margin-bottom: 5px;
-  img{
-    height:8rem;
+
+  img {
+    height: 8rem;
   }
-  p{
-  font-size:1rem;
+
+  p {
+    font-size: 1rem;
     color: $white;
-    padding-right:20px;
+    padding-right: 20px;
   }
 }
-.close-button{
+
+.close-button {
   color: $secondary-color;
+  right: 1.5rem;
+  top: 1.2rem;
 }

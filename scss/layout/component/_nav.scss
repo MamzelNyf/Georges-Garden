@@ -1,3 +1,4 @@
+// Responsive navigation bar without js
 .no-js {
   @include breakpoint(small only) {
     .top-bar {
@@ -13,7 +14,7 @@
 }
 
 [data-sticky] {
-  width:100%;
+  width: 100%;
 }
 
 .sticky-container {
@@ -21,39 +22,32 @@
 }
 
 .top-bar {
-  width: 100%;
-  background-color: $secondary-color!important;
+  background-color: rgba($secondary-color, 0.7) !important;
   box-shadow: 1px 0 3px $dark-gray;
-    .menu {
-      background-color: rgba($secondary-color,1);
-      li {
-        display: flex;
-        align-items: center;
-      } 
-      a {
-        color: $white;
-        font-weight: bold;
-        &:hover {
+
+  .menu {
+    background-color: transparent !important;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
         color: $primary-color;
-        }
       }
     }
-    .menu-text {
-      color: $black;
-    }
   }
-  .title-bar{
-    background-color: $secondary-color!important;
-  }
-  .logo{
-    margin:0!important;
-    padding:0!important;
-  }
+}
 
-  .menu-mobile{
-    width: 100vw;
-  }
-.close-button{
-  right: 1.5rem;
-  top: 1.2rem;
+.title-bar {
+  background-color: rgba($secondary-color, 0.7) !important;
+}
+
+.logo {
+  margin: 0 !important;
+  padding: 0 !important;
 }

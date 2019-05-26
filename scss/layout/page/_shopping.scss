@@ -1,9 +1,11 @@
 .tabs {
     img {
         width: 4rem;
+
         @include breakpoint(large) {
             width: 5rem;
         }
+
         @include breakpoint(large) {
             width: 6rem;
         }
@@ -51,9 +53,11 @@
     opacity: 0;
     @include mui-animation(fade(in));
     animation-duration: 1s;
+    // object stay on its last state after the animation, here opacity 100%
     animation-fill-mode: forwards;
 }
 
+// Make the animation on each img in the each div of the componant with .fadein class starting with a delay on 0.2s  
 @for $i from 1 through 10 {
     .fadein div:nth-of-type(#{$i}) img {
         -webkit-animation-delay:(#{$i*0.2s});
