@@ -34,3 +34,11 @@ function serve() {
 gulp.task('sass', sass);
 gulp.task('serve', gulp.series('sass', serve));
 gulp.task('default', gulp.series('sass', serve));
+
+gulp.task('merge-foundation-js', function () {
+  return gulp.src([foundationJsDir + '/foundation.js', foundationJsDir + '/*.js'])
+      .pipe(concat('all-foundation.js'))
+      .pipe(gulp.dest(jsDir))
+      .pipe(notify({ message: "Foundation js merged" }))
+      .on('error', gutil.log);
+});

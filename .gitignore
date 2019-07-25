@@ -1,9 +1,8 @@
 etc/
-node_modules/
 Local/
 scss/
 CHANGELOG.md
 gulpfile.js
 package-lock.json
 package.json
-yarn.lock
+node_modules
